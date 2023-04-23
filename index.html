@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #ccc">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dinara Garipova</title>
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+   <!-- Link to Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/8909777c5f.js" crossorigin="anonymous"></script>  
+   <!-- JavaScript code for a toast notification -->
+  <script>
+    "use strict";
+    function toast() {
+      document.getElementById("ok")?.classList.toggle("open");
+      setTimeout(() => {
+        document.querySelectorAll("input[type='submit']")?.forEach((btn) => btn.disabled = true);
+      }, 0);
+      setTimeout(() => {
+        document.getElementById("ok")?.classList.toggle("open");
+        document.querySelectorAll("input[type='submit']")?.forEach((btn) => btn.disabled = null);
+      }, 2000);
+    }
+  </script>
+</head>
+<body>
+  <!-- Main wrapper -->
+  <div id="wraper">
+    <!-- Sidebar menu -->
+    <aside id="aside">
+      <figure class="image">
+        <a href="./index.html">
+          <!-- Profile picture -->
+          <img class="anim-scale" src="img/Dinara_Garipova.jpg" srcset="img/Dinara_Garipova_2.jpg 2x" width="272" height="272" loading="lazy" alt="Dinara Garipova">
+        </a>
+      </figure>
+      <div class="menu__icons">
+        <div class="menu__icon">
+          <span></span>
+        </div>
+      </div>
+      <div class="menu">
+          <!-- Sidebar navigation menu -->
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li>
+              <i class="fa-solid fa-user-astronaut"></i>
+              <a class="menu__link link" href="#id-0" data-goto=".section-1">ABOUT ME</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a class="menu__link link" href="#id-1" data-goto=".section-2">EDUCATION</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-gear"></i>
+              <a class="menu__link link" href="#id-2" data-goto=".section-3">SKILLS<span class="menu__arrow"></span>
+              </a>
+              <ul class="menu__sub-list">
+                <li>
+                  <a class="menu__sub-link link" href="#id-2-1" data-goto=".scroll__item_1">LANGUAGES</a>
+                </li>
+                <li>
+                  <a class="menu__sub-link link" href="#id-2-2" data-goto=".scroll__item_2">PROGRAMMING</a>
+                </li>
+                <li>
+                  <a class="menu__sub-link link" href="#id-2-3" data-goto=".scroll__item_3">OPERATING SYSTEMS</a>
+                </li>
+                <li>
+                  <a class="menu__sub-link link" href="#id-2-4" data-goto=".scroll__item_4">EXPERIENCE</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <i class="fa-solid fa-diagram-project"></i>
+              <a class="menu__link link" href="#id-3" data-goto=".section-4">ACHIEVEMENTS</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-crown"></i>
+              <a class="menu__link link" href="#id-4" data-goto=".section-5">ADVANTAGES</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <a class="menu__link link" href="#id-5" data-goto=".section-6">PROFESSION</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a class="menu__link link" href="#id-6" data-goto=".section-7">FEEDBACK</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!-- The main container for the page -->
+    <main id="main">
+      <!-- Section 1 -->
+      <section id="id-0" class="section section-1">
+        <h1 id="h1" class="anim-left anim-bottom anim-one">
+          <!-- Link to section 1 with animation classes -->
+          <a class="link" href="#id-0" data-goto=".section-1">
+            Dinara <span class="akcent">Garipova</span>
+          </a>
+        </h1>
+        <p class="subtitle anim-left anim-one">
+          <!-- Personal information -->
+          32&nbsp;Pompova&nbsp;· Brno&nbsp;61700&nbsp;· 420(705)924816&nbsp;· <a href="mailto:xgarip00@stud.fit.vutbr.cz" class="akcent">xgarip00@stud.fit.vutbr.cz</a>
+        </p>
+        <div class="section__content">
+          <ul class="section-1__list">
+            <li class="text section-1__text anim-right anim-one">I strive to make my work meaningful and make the world a better place.</li>
+            <li class="text section-1__text anim-right anim-one">I do not limit myself to one programming language or technology, but I try 
+              to choose the most effective tool for each task.</li>
+            <li class="text section-1__text anim-right anim-one">This allows me to quickly solve problems and achieve better results.</li>
+          </ul>
+          <nav class="social anim-left anim-one">
+            <!-- Links to social media profiles -->
+            <div class="inst">
+              <a href="https://www.instagram.com/20dinara03/" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/icons.svg#instagram" width="32" height="32" loading="lazy" alt="instagram">
+              </a>
+            </div>
+            <div class="vk">
+              <a href="https://vk.com/id237376945" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/icons.svg#vk" width="32" height="32" loading="lazy" alt="vk">
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="nav-page" style="display: none;">
+          <!-- Link to next section -->
+          <a href="#" class="next">
+            <img class="link" data-goto=".section-2" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section id="id-1" class="section section-2">
+        <h2 class="section__title anim-items anim-left">EDUCATION</h2>
+        <div class="section__content">
+          <!-- Education items -->
+          <div class="section__item">
+            <h3 class="section__item-title anim-bottom">
+              Secondary full education
+            </h3>
+            <p class="section__item-subtitle">
+              Private School "Yelena-Servis", certificate with honors
+            </p>
+            <p class="section__item-period">
+              2010-2021
+            </p>
+          </div>
+          <div class="section__item">
+            <h3 class="section__item-title anim-bottom">
+              Higher education
+            </h3>
+            <p class="section__item-subtitle">
+              Bachelor of Information Technology Faculty
+            </p>
+            <p class="section__item-period">
+              VUT FIT, 2021-2024
+            </p>
+          </div>
+        </div>
+        <!-- This is a hidden navigation section -->
+        <div class="nav-page" style="display: none;">
+            <!-- This link leads to the section with class "section-1" -->
+          <a class="early" href="#">
+            <img class="link" data-goto=".section-1" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+           <!-- This link leads to the section with class "section-3" -->
+          <a class="next" href="#">
+            <img class="link" data-goto=".section-3" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="down">
+          </a>
+        </div>
+      </section>
+      <!-- This is the "SKILLS" section -->
+      <section id="id-2" class="section section-3">
+        <h2 class="section__title anime anim-left">SKILLS</h2>
+        <p class="section__subtitle">
+          Quick assimilation of information and learning new things
+        </p>
+         <!-- This is a subsection for "LANGUAGES" -->
+        <div id="id-2-1" class="scroll__item scroll__item_1">
+          <h3 class="scroll__title anim-bottom">
+            LANGUAGES
+          </h3>
+          <p class="scroll__subtitle">
+            Excellent knowledge of:
+          </p>
+          <div class="section__content scroll__content">
+            <ul class="section__list scroll__list">
+              <!-- These are list items for each language -->
+              <li class="section__list-item scroll__list-item">RUSSIAN</li>
+              <li class="section__list-item scroll__list-item">ENGLISH</li>
+              <li class="section__list-item scroll__list-item">CZECH</li>
+              <li class="section__list-item scroll__list-item">TATAR</li>
+            </ul>
+          </div>
+        </div>
+          <!-- This is a subsection for "PROGRAMMING" -->
+        <div id="id-2-2" class="scroll__item scroll__item_2">
+          <h3 class="scroll__title anim-bottom">
+            PROGRAMMING
+          </h3>
+          <p class="scroll__subtitle">
+            Knowledge of programming languages and programming tools
+          </p>
+          <div class="section__content scroll__content">
+            <div class="scroll__skils">
+               <!-- These are programming skills with images for each skill -->
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">HTML5</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#html5" width="86" height="72" loading="lazy" alt="HTML5">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">SCC3</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#scc3" width="86" height="72" loading="lazy" alt="SCC3">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">JS</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#js" width="86" height="72" loading="lazy" alt="JS">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">PHP</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#php" width="86" height="72" loading="lazy" alt="PHP">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">SQL</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#sql" width="86" height="72" loading="lazy" alt="SQL">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Assembler</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#asm" width="86" height="72" loading="lazy" alt="Assembler">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">C</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#c" width="86" height="72" loading="lazy" alt="C">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">C++</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#c++" width="86" height="72" loading="lazy" alt="C++">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">C#</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#c+++" width="86" height="72" loading="lazy" alt="C#">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Python</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#python" width="86" height="72" loading="lazy" alt="Python">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Pascal</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#ps" width="86" height="72" loading="lazy" alt="Pascal">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Delphi</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#delphi" width="86" height="72" loading="lazy" alt="Delphi">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">VHDL</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#vhdl" width="86" height="72" loading="lazy" alt="VHDL">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">bash</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#bash" width="86" height="72" loading="lazy" alt="bash">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Java</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#java" width="86" height="72" loading="lazy" alt="Java">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Prolog</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#prolog" width="86" height="72" loading="lazy" alt="Prolog">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">GitHub</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#github" width="86" height="72" loading="lazy" alt="GitHub">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title"></p>
+                <div class="scroll__skil-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Scrollable item with information about operating systems -->
+        <div id="id-2-3" class="scroll__item scroll__item_3">
+           <!-- Title of the scrollable item -->
+          <h3 class="scroll__title anim-bottom">
+            OPERATING SYSTEMS
+          </h3>
+          <p class="scroll__text">
+            Working experience with different operating systems is one of my strongest professional skills
+          </p>
+           <!-- Subtitle for the list of operating systems -->
+          <p class="scroll__subtitle">
+            I’m working confidently with
+          </p>
+          <div class="section__content scroll__content">
+            <div class="scroll__skils">
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Windows</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#windows" width="86" height="72" loading="lazy" alt="Windows">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">Linux</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#linux" width="86" height="72" loading="lazy" alt="Linux">
+                </div>
+              </div>
+              <div class="scroll__skil">
+                <p class="scroll__skil-title">macOS</p>
+                <div class="scroll__skil-img">
+                  <img src="img/icons/icons.svg#macos" width="86" height="72" loading="lazy" alt="macOS">
+                </div>
+              </div>
+              <!-- Information block about skills with different operating systems -->
+              <div class="scroll__info">
+                <p class="scroll__info-text">Flexibility and ability to adapt quickly allows me to work effectively 
+                  regardless of the chosen operating system</p>
+              </div>
+            </div>
+              <!-- List of bullet points with information about the author's skills with operating systems -->
+            <ul class="section__list scroll__list">
+              <li class="section__list-item scroll__list-item">I KNOW THEIR MAIN PRINCIPLES OF WORK</li>
+              <li class="section__list-item scroll__list-item">I CAN SET UP THEM QUICKLY</li>
+              <li class="section__list-item scroll__list-item">FIND SOLUTIONS FOR EMERGING PROBLEMS</li>
+              <li class="section__list-item scroll__list-item">OPTIMIZE AND SIMPLIFY YOUR WORK WITH UTILITIES</li>
+            </ul>
+          </div>
+        </div>
+        <div id="id-2-4" class="scroll__item scroll__item_4">
+          <h3 class="scroll__title anim-bottom">
+            EXPERIENCE
+          </h3>
+          <p class="scroll__subtitle">
+            GREAT AND VARIOUS EXPERIENCE
+          </p>
+          <div class="section__content scroll__content">
+            <!-- An unordered list of experiences -->
+            <ul class="section__list scroll__list">
+              <li class="section__list-item scroll__list-item">WRITING A 3D GAME</li>
+              <li class="section__list-item scroll__list-item">EXPERIENCE WITH SIGNAL PROCESSING AND DISPLAY</li>
+              <li class="section__list-item scroll__list-item">DEVELOPMENT OF THE APP "CALCULATOR" FOR PC</li>
+              <li class="section__list-item scroll__list-item">WORKS ON ELECTRICAL ENGINEERING AND PHYSICS</li>
+              <li class="section__list-item scroll__list-item">MANY OTHER PROJECTS</li>
+            </ul>
+          </div>
+        </div>
+         <!-- Navigation links to other sections of the webpage -->
+        <div class="nav-page" style="display: none;">
+          <a class="early" href="#">
+            <!-- A link to the previous section -->
+            <img class="link" data-goto=".section-2" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+          <a class="next" href="#">
+            <!-- A link to the next section -->
+            <img class="link" data-goto=".section-4" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="down">
+          </a>
+        </div>
+      </section>
+      <!-- This is the second section of the webpage -->
+      <section id="id-3" class="section section-4">
+        <h2 class="section__title anim-left">ACHIEVEMENTS</h2>
+        <p class="section__subtitle">
+          For me, the most significant achievements are my projects that I developed during my studies.
+        </p>
+        <div class="section__content">
+          <!-- An unordered list of achievements -->
+          <ul class="section__list">
+            <li class="section__list-item">CREATING SCRIPT USING THE CORE AND STANDARD UTILITIES IN THE ENVIRONMENT OF THE 
+              OPERATING SYSTEM <b>UNIX</b>
+            </li>
+            <li class="section__list-item">SYNCHRONIZING PROCESSES IN A <b>UNIX</b> ENVIRONMENT USING THE  <b>C</b>
+            </li>
+            <li class="section__list-item">DEVELOPMENT OF A NETWORK SNIFFER</li>
+            <li class="section__list-item">DEVELOPING A PHP COMPILER <b>PHP</b>
+            </li>
+          </ul>
+        </div>
+        <!-- Navigation links to other sections of the webpage -->
+        <div class="nav-page" style="display: none;">
+          <a class="early" href="#">
+            <!-- A link to the previous section -->
+            <img class="link" data-goto=".section-3" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+          <a class="next" href="#">
+            <img class="link" data-goto=".section-5" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="down">
+          </a>
+        </div>
+      </section>
+      <!-- Section with ID 'id-4' and class 'section' and 'section-5' -->
+      <section id="id-4" class="section section-5">
+        <h2 class="section__title anim-left">ADVANTAGES</h2>
+        <p class="section__subtitle">
+          I am very proud to be able to work with different programming languages, which gives me a lot of advantages.
+        </p>
+        <div class="section__content">
+           <!-- List of advantages -->
+          <ul class="section__list">
+            <li class="section__list-item">RESPONSIBILITY AND AMBITION</li>
+            <li class="section__list-item">HIGH WORK CAPABILITY AND PRODUCTIVITY</li>
+            <li class="section__list-item">I BELIEVE THAT I HAVE GOOD COMMUNICATION SKILLS.</li>
+            <li class="section__list-item">I CAN EXPRESS MY THOUGHTS CLEARLY IN RUSSIAN, IN ENGLISH 
+              AND CZECH.</li>
+            <li class="section__list-item">I ALSO ABLE TO LISTEN TO AND CONSIDER THE VIEWPOINTS OF OTHER PEOPLE, 
+              WHICH ALLOWS ME TO WORK EFFECTIVELY IN A TEAM</li>
+            <li class="section__list-item">I WOULD NOT SAY THAT I AM A COMPLETE LEADER, BUT I ALWAYS TRY 
+              TO ACT IN THE ROLE OF THE INITIATOR AND ORGANIZER.</li>
+            <li class="section__list-item"> I CAN PLAN WORK, DISTRIBUTE TASKS AND MONITOR THEIR IMPLEMENTATION, WHICH HELPS 
+              TO ACHIEVE THE GOALS IN THE SET OF THE DEALINE</li>
+          </ul>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="nav-page" style="display: none;">
+          <a class="early" href="#">
+            <img class="link" data-goto=".section-4" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+          <a class="next" href="#">
+            <img class="link" data-goto=".section-6" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="next">
+          </a>
+        </div>
+      </section>
+      <!-- Section with ID 'id-5' and class 'section' and 'section-6' -->
+      <section id="id-5" class="section section-6">
+        <h2 class="section__title anim-left">PROFESSION</h2>
+        <p class="section__subtitle">
+          I have a special interest in game development and computer graphics
+        </p>
+        <!-- Information about profession -->
+        <div class="section__content">
+          <div class="section__info anim-bottom">
+            <p class="section__info-text">
+              Although I have not yet decided where exactly I want to work in the IT field, because I have interests and knowledge in various fields, however, I feel a particular interest in creating games and computer graphics. I would like to explore this area further and possibly connect my career with these industries.
+            </p>
+          </div>
+        </div>
+         <!-- Navigation buttons -->
+        <div class="nav-page" style="display: none;">
+          <a href="#" class="early">
+            <img class="link" data-goto=".section-5" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+          <a class="next" href="#">
+            <img class="link" data-goto=".section-7" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="next">
+          </a>
+        </div>
+      </section>
+      <!-- This code is a section of a webpage for feedback -->
+      <section id="id-6" class="section section-7">
+        <h2 class="section__title anim-left">FEEDBACK</h2>
+        <div class="section__content anim-scale">
+          <!-- The form for users to submit feedback -->
+          <form class="section-form forma_my" method="post" onsubmit="toast(); return false;">
+            <!-- Input field for the user's name -->
+            <div class="validate-input-at w-50" data-validate="Obligatory field">
+              <input class="input-at" type="text" required="" name="name-at" placeholder="Name">
+              <span class="focus-input-at"></span>
+            </div>
+            <div class="validate-input-at w-50" data-validate="Obligatory field">
+              <input class="input-at" type="email" required="" name="email-at" placeholder="E-mail">
+              <span class="focus-input-at"></span>
+            </div>
+            <!-- Input field for the user's feedback message -->
+            <div class="validate-input-at" data-validate="Obligatory field">
+              <textarea class="input-at" required="" name="message-at" placeholder="Print here"></textarea>
+              <span class="focus-input-at"></span>
+            </div>
+             <!-- Checkbox for the user to confirm they have read and agreed to the user agreement -->
+            <input checked="checked" class="input-at" id="checkbox-at" type="checkbox" name="checkbox-at" onchange="document.getElementById('submit-at').disabled = !this.checked;">
+            <label for="checkbox-at">
+              I hereby confirm that I have read and agreed to the <a href="#rules">user agreement</a>
+            </label>
+             <!-- Hidden input field for the feedback subject -->
+            <input type="hidden" name="subject-at" value="Form Theme">
+            <button id="submit-at" class="forma_my-btn">SEND</button>
+          </form>
+           <!-- Placeholder for the result of the feedback submission -->
+          <div class="result-at"></div>
+        </div>
+        <div class="nav-page" style="display: none;">
+          <a href="#" class="early">
+            <img class="link" data-goto=".section-6" src="img/icons/icons.svg#down" width="30" height="30" loading="lazy" alt="early">
+          </a>
+        </div>
+      </section>
+      <!-- Placeholder for a confirmation message after feedback submission -->
+      <div id="ok">
+        <div>
+          <p>
+            <b>Thank you!</b>
+          </p>
+          <p>Your message has been sent</p>
+        </div>
+      </div>
+      <!-- Navigation link to top of the page -->
+      <a id="gotop" href="#id-0" class="link" data-goto=".section-1">&#8593;</a>
+    </main>
+  </div>
+  <footer id="footer">
+    <div class="footer__info">
+      <a href="/">Dinara Garipova</a> © <span>2023</span>
+    </div>
+  </footer>
+  <!-- Script file for the webpage -->
+  <script src="js/app.js"></script>
+</body>
+</html>
